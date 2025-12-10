@@ -49,12 +49,13 @@ height:500px;
 text-align: center;
 }
 
+
 #footer{
 width:100%;
 height: 80px;
 background-color:black;
 clear:both;
-
+}
 </style>
 </head>
 <body>
@@ -66,7 +67,7 @@ clear:both;
 	<div id="top">
 		<p>UserCreate</p>
 	</div>
-</div>
+<div>
 	<s:if test="errorMessage != ''">
 		<s:property value="errorMessage" escape="false"/>
 	</s:if>
@@ -78,6 +79,7 @@ clear:both;
 		</td>
 		<td>
 		<input type="text" name="loginUserId" value=""/>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -97,6 +99,15 @@ clear:both;
 		<s:submit value="登録"/>
 		</s:form>
 		</table>
-
-
-}
+		<div>
+			<span>前画面に戻る場合は</span>
+			<a href='<s:url action="HomeAction" />'>こちら</a>
+		</div>
+	</div>
+<div id="footer">
+	<div id="pr">
+	</div>
+</div>
+</div>
+</body>
+</html>
