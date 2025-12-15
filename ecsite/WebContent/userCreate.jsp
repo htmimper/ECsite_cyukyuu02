@@ -37,10 +37,10 @@ margin:30px auto;
 border:1px solid #333;
 }
 
-#header{
-width:100%;
-height: 80px;
-background-color: black;
+#header {
+width: 100%;
+height:80px; background-color:
+black;
 }
 
 #main {
@@ -49,12 +49,10 @@ height:500px;
 text-align: center;
 }
 
-
 #footer{
 width:100%;
 height: 80px;
-background-color:black;
-clear:both;
+background-color:black; clear:both;
 }
 </style>
 </head>
@@ -67,46 +65,40 @@ clear:both;
 	<div id="top">
 		<p>UserCreate</p>
 	</div>
-<div>
+
 	<s:if test="errorMessage != ''">
 		<s:property value="errorMessage" escape="false"/>
 	</s:if>
+
 	<table>
-	<s:form action="UserCreateConfirmAction">
-	<tr>
-		<td>
-		<label>ログインID:</label>
-		</td>
-		<td>
-		<input type="text" name="loginUserId" value=""/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-		<label>ログインPASS:</label>
-		</td>
-		<td><input type="text" name="loginPassword" value=""/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-		<label>ユーザー名:</label>
-		</td>
-		<td>
-		<input type="text" name="userName" value=""/>
-		</td>
-	</tr>
-		<s:submit value="登録"/>
+		<s:form action="UserCreateConfirmAction">
+			<tr>
+				<td><label>ログインID:</label></td>
+				<td><input type="text" name="loginUserId" /></td>
+			</tr>
+			<tr>
+				<td><label>ログインPASS:</label></td>
+				<td><input type="text" name="loginPassword" /></td>
+			</tr>
+			<tr>
+				<td><label>ユーザー名:</label></td>
+				<td><input type="text" name="userName" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<s:submit value="登録"/>
+				</td>
+			</tr>
 		</s:form>
-		</table>
-		<div>
-			<span>前画面に戻る場合は</span>
-			<a href='<s:url action="HomeAction" />'>こちら</a>
-		</div>
+	</table>
+
+	<div>
+		<span>前画面に戻る場合は</span>
+		<a href='<s:url action="HomeAction" />'>こちら</a>
 	</div>
+</div>
 <div id="footer">
-	<div id="pr">
-	</div>
+<div id="pr">
 </div>
 </div>
 </body>
